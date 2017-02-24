@@ -1,4 +1,14 @@
-<h1>Show</h1>
+<p id="notice"><%= notice %></p>
 
+<p>
+  <strong>Title:</strong>
+  <%= @blog.title %>
+</p>
 
-<%= @portfolio_item.inspect %>
+<p>
+  <strong>Body:</strong>
+  <%= @blog.body %>
+</p>
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>
