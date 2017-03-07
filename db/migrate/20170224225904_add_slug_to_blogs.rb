@@ -1,6 +1,5 @@
-class AddSlugToBlogs < ActiveRecord::Migration[5.0]
+class AddPostStatusToBlogs < ActiveRecord::Migration[5.0]
   def change
-    add_column :blogs, :slug, :string
-    add_index :blogs, :slug, unique: true
+    add_column :blogs, :status, :integer, default: 0
   end
 end
