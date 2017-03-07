@@ -1,12 +1,12 @@
 module DefaultPageContent
-    extend ActiveSupport::Concern
+  extend ActiveSupport::Concern
 
-  included do 
+  included do
     before_filter :set_page_defaults
-  endß
+  end
 
   def set_page_defaults
-    @page_title =  "DevcampPortfolio | My Portfolio Website"
-    @seo_keyswords = "Hunter Orges portfolio"
+    @page_title = "Devcamp Portfolio | My Portfolio Website"
+    @seo_keywords = "Hunter Orges portfolio"
   end
-end 
+end
