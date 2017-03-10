@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/huntersfuntime/funtime_view_tool
+  revision: 661ad7f9d65f7ba86e795688b8397f8d46934628
+  specs:
+    funtime_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -180,6 +186,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.2)
   friendly_id (~> 5.1.0)
+  funtime_view_tool!
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
