@@ -16,7 +16,8 @@ module ApplicationHelper
     end
   end
 
-   def copyright_generator
+
+  def copyright_generator
     FuntimeViewTool::Renderer.copyright 'Hunter Orges', 'All rights reserved'
   end
 end
