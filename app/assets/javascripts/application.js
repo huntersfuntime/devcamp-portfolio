@@ -14,7 +14,9 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require jquery-ui
+//= require tether
 //= require html.sortable
 //= require cocoon
+//= require gritter
 //= require turbolinks
 //= require_tree .
