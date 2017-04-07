@@ -18,6 +18,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <%= video_tag(
+            'videos/hunter.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'screen.jpg'
+            )
+          %>
+
   <body>
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
