@@ -1,40 +1,21 @@
 @import "bootstrap";
-@import "jquery-ui";
+@import "font-awesome";
 @import "gritter";
 
+/*
+ * Globals
+ */
+
+@media (min-width: 48em) {
+  html {
+    font-size: 18px;
+  }
+}
+
 body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
   font-family: 'Raleway', sans-serif;
-}
-
-.navbar {
-  margin-bottom: 0;
-}
-
-.jumbotron {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  margin-bottom: 0;
-  background-color: #fff;
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron-heading {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
-}
-
-.album {
-  min-height: 50rem; /* Can be removed; just added for demo purposes */
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #f7f7f7;
+  color: #555;
+  
 }
 
 h1, .h1,
@@ -44,37 +25,236 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   font-family: 'Playfair Display', serif;
- 
+  font-weight: normal;
+  color: #333;
 }
 
-.card {
-  float: left;
-  width: 100%;
-  padding: .75rem;
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+.container {
+  max-width: 60rem;
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  margin-bottom: 3rem;
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+          box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+}
+
+
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-bottom: 1.25rem;
   margin-bottom: 2rem;
-  border: 0;
+  border-bottom: .05rem solid #eee;
+
+}
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 1.1rem;
+  color: #999;
 }
 
-.card > img {
-  margin-bottom: .75rem;
+@media (min-width: 40em) {
+  .blog-title {
+    font-size: 3.5rem;
+  }
 }
 
-.card-text {
-  font-size: 85%;
+
+/*
+ * Main column and sidebar layout
+ */
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 1rem;
+  /*margin: 0 -1rem 1rem;*/
+}
+.sidebar-module-inset {
+  padding: 1rem;
+  background-color: transparent;
+  border-radius: .25rem;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
 }
 
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
 }
 
-footer p {
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
   margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
 }
 
-/* Custom styles */
 
-.portfolio-container{
-  padding-top: 30px;
+/*
+ * Footer
+ */
 
+.blog-footer {
+  margin-top: 20px;
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: transparent;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*
+ * Custom styles
+ */
+
+.social-links li {
+  font-size: 2.5em;
+}
+
+.comment-card > .card {
+  margin-top: 15px;
+}
+
+.comment-attribution {
+  font-size: .8em;
+  font-style: italic;
+}
+
+.comment-name {
+  font-weight: 700;
+  
+}
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
+}
+
+.blog-nav {
+  margin-bottom: 30px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
+}
+
+.jumbotron {
+ 
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.jumbotron h1 {
+  color: white;
+  text-align: left;
+}
+.jumbotron p {
+  color: white;
+}
+.page-header {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.page-header h1 {
+  color: #c0e8e6;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 900px;
+  font-style: normal;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 50px;
+  display: block;
+
+}
+
+.blog-nav {
+  background-color: transparent;
+}
+
+#hunterblogs a {
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+}
+
+ #socialmedia fa {
+  color: #c0e8e6;
+}
+
+.sidebar-module a {
+  color: #c0e8e6;
+}
+#title a {
+  font-size: 25px;
+  float: center;
+}
+a:link {
+    color: #c0e8e6;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: #c0e8e6;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+.goingup {
+  width: 260px;
+  height: 180px;
+  
 }
